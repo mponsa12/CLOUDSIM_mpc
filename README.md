@@ -57,20 +57,14 @@ Assegura’t de tenir instal·lat:
 
 ## 🛠️ Instal·lació
 
-⚙️ 1.1 Descomprimir el fitxer zip corresponent
-    * CloudSim 4.0 i 7.0:
-    ```https://github.com/cloudslab/cloudsim/releases```
-    * CloudSim-sergi: 
-    ```https://bitbucket.org/svila_phd/metacloudsim/src/vmAllocation/```
-    * CloudSim 7.0:
+*1.1 Descomprimir el fitxer zip corresponent*
+  - [CloudSim 4.0 i 7.0](https://github.com/cloudslab/cloudsim/releases)
+  - [CloudSim-sergi](https://bitbucket.org/svila_phd/metacloudsim/src/vmAllocation/)
 
-⚙️ 1.2 Obre amb IntelliJ
-Obre IntelliJ IDEA.
-Importa el projecte com a projecte Maven.
-Espera que es resolguin les dependències.
+*1.2 Importar el projecte al teu IDE Java*
 
-⚙️ 1.3 Executar un exemple
-Ves a cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples/
-Executa una classe com CloudSimExample1.java.
+*1.3 Executar un exemple*
+   - Ves a cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples/
+   - Executa una classe com CloudSimExample1.java.
 
 ---
