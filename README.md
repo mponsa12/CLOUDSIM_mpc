@@ -20,7 +20,8 @@ L'objectiu d'aquest projecte és estudiar detalladament les diferències entre e
 
 El cloudSim 4.0 presenta la següent estructura de directoris:
 
-```cloudsim-4.0/
+```
+cloudsim-4.0/
 ├── modules/
 │   ├── cloudsim/
 │   │   ├── src/
@@ -41,7 +42,61 @@ El cloudSim 4.0 presenta la següent estructura de directoris:
 └── distribution/  
 ```
 
-En un primer cop d'ull, podem veure que el Sergi va copiar la carpeta ```modules/cloudsim/src/main/java/org/cloudbus/cloudsim/``` del projecte original de CloudSim G4 i la va ubicar en la direcció ```cloud-sergi/src/main/java/org/cloudbus/cloudsim/``` del seu propi projecte. A més, va afegir 
+Fent ús del software *Merge*, podem veure que en Sergi va copiar la carpeta ```modules/cloudsim/src/main/java/org/cloudbus/cloudsim/``` del projecte original CloudSim G4 i la va ubicar en el directori ```cloud-sergi/src/main/java/org/cloudbus/cloudsim/```. Va fer petites modificacions en alguns fitxers i va afegir el directori EXAMPLES.
+
+
+```
+cloud_sergi/
+├── cloudsim
+│   ├── output
+│   │   ├── json
+│   │   └── log
+│   ├── src
+│   │   ├── main
+│   │   │   ├── java
+│   │   │   │   ├── PSO
+│   │   │   │   ├── PSOMO
+│   │   │   │   ├── PSOMO2
+│   │   │   │   ├── genetic
+│   │   │   │   ├── geneticOrder
+│   │   │   │   ├── geneticsimulator
+│   │   │   │   ├── gridsim
+│   │   │   │   ├── hybridTechnique
+│   │   │   │   ├── jmetal54
+│   │   │   │   ├── ORG             # Conté l'estructura del CloudSim G4 
+│   │   │   │   │   └── cloudbus
+│   │   │   │   │       └── cloudsim
+│   │   │   │   │           ├── container
+│   │   │   │   │           ├── core
+│   │   │   │   │           ├── distributions
+│   │   │   │   │           ├── EXAMPLES                # Directori afegit
+│   │   │   │   │           │   ├── container
+│   │   │   │   │           │   ├── network
+│   │   │   │   │           │   │   └── datacenter
+│   │   │   │   │           │   └── power
+│   │   │   │   │           │       ├── planetlab
+│   │   │   │   │           │       └── random
+│   │   │   │   │           ├── lists
+│   │   │   │   │           ├── network
+│   │   │   │   │           ├── power
+│   │   │   │   │           ├── provisioners
+│   │   │   │   │           └── util
+│   │   │   │   ├── shedulers
+│   │   │   │   ├── simulator
+│   │   │   │   ├── svila
+│   │   │   │   ├── system
+│   │   │   │   ├── ut
+│   │   │   │   └── util
+│   │   │   └── resources
+│   │   └── test
+│   └── target
+├── jmetal
+├── jmetal-algorithm
+├── jmetal-core
+├── jmetal-exec
+├── jmetal-problem
+└── uncommons-maths-1.2.3
+```
 
 ---
 
@@ -51,20 +106,19 @@ Assegura’t de tenir instal·lat:
 
 * Java JDK (versió 8 o superior)
 * Apache Maven o Gradle (segons la versió)
-* Git
 * IntelliJ IDEA o qualsevol IDE Java
 ---
 
 ## 🛠️ Instal·lació
 
-*1.1 Descomprimir el fitxer zip corresponent*
+*1. Descomprimir el fitxer zip corresponent*
   - [CloudSim 4.0 i 7.0](https://github.com/cloudslab/cloudsim/releases)
   - [CloudSim-sergi](https://bitbucket.org/svila_phd/metacloudsim/src/vmAllocation/)
 
-*1.2 Importar el projecte al teu IDE Java*
+*2. Importar el projecte al teu IDE Java*
 
-*1.3 Executar un exemple*
-   - Ves a cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples/
-   - Executa una classe com CloudSimExample1.java.
+*3. Executar un exemple*
+   - Ves a ```cloudsim-examples/src/main/java/org/cloudbus/cloudsim/examples/```
+   - Executa una classe com ```CloudSimExample1.java```
 
 ---
