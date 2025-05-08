@@ -101,13 +101,22 @@ cloud_sergi/
 ### 📁 Fitxers Modificats
 
 | Fitxer | Canvi | Motiu |
-|-----------|-----------|-----------|
+|--------|-------|-------|
 |```cloudsim/network/datacenter/TopologicalGraph.java```|Afegeix comentari ```// WORKING ON private Map<Node> nodeMap;```| ...|
 |```cloudsim/network/datacenter/TopologicalNode.java```|<ul><li>Afegeix mètode public *setNodeLabel(String name)*<br></li><li>Afegeix setter `setNodeLabel(String name)`</li></ul>| ... |
 |```cloudsim/power/models/PowerModelSpecPower.java```|<ul><li>Afegeix condició: <code>if (utilization > 1 && utilization < 1.0001){<br>utilization = 1;<br>}</code>al mètode <code>getPower()</code></li></ul>|...|
 |```cloudsim/power/PowerDatacenter.java```|Varis canvis (buscar forma d'escriure'ls)|...|
 |```cloudsim/power/PowerHost.java```|<ul><li>Afegeix mètode *toString()*<br></li><li>Afegeix mètode *toJSON()*`</li></ul>|...|
 |```cloudsim/power/PowerHostUtilizationHistory.java```|Canvia el mètode *getUtilizationHistory()* de *protected* a *public*|...|
+|```cloudsim/power/PowerVm.java```|Canvia el mètode *getUtilizationHistory()* de *protected* a *public*|...|
+|```cloudsim/power/PowerVmAllocationPolicyAbstract.java```|<ul><li>Afegeix getter i setter de *VmSelectionPolicy*</li><li>Afegeix condició: <code>if(vm.hasPreAssignedHost) {vm.hasPreAssignedHost = false;</br>return vm.preAssignedHost;</br>}</code>al mètode <code>findHostForVm()</code></li><li>VARIES MODIFICACIONS: PENSAR COM POSAR-HO</li></ul>|...|
+|```cloudsim/power/PowerVmAllocationPolicyMigrationAbstract.java```|<ul><li>VARIES MODIFICACIONS: PENSAR COM POSAR-HO</li></ul>|...|
+|```cloudsim/power/PowerVmAllocationPolicyMigrationInterQuartileRange.java```|<ul><li>Canvia el mètode *isHostOverUtilized()* de *protected* a *public*</li><li>Afegeix un *println* per mostrar informació pel terminal (hostID, isMigrationRequired)</li></ul>|...|
+|```cloudsim/power/PowerVmAllocationPolicyMigrationLocalRegression.java```|Canvia el mètode *isHostOverUtilized()* de *protected* a *public*|...|
+|```cloudsim/power/PowerVmAllocationPolicyMigrationMedianAbsoluteDeviation.java```|Canvia el mètode *isHostOverUtilized()* de *protected* a *public*|...|
+|```cloudsim/power/PowerVmAllocationPolicyMigrationStaticThreshold.java```|Canvia els mètodes *isHostOverUtilized()* i *getUtilizationThreshold()* de *protected* a *public*|...|
+|```cloudsim/power/PowerVmSelectionPolicy.java```|<ul><li>Afegeix getter i setter de AllocationPolicy</li><li>Afegeix getter i setter de PowerDatacenter</li></ul>|...|
+|```cloudsim/power/PowerMaximumCorrelation.java```|<ul><li>Canvia el mètode *getCorrelationCoefficients()* de *protected* a *public*</li></ul>|...|
 
 ---
 
