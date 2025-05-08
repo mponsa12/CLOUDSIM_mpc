@@ -98,6 +98,17 @@ cloud_sergi/
 └── uncommons-maths-1.2.3
 ```
 
+### 📁 Fitxers Modificats
+
+| Fitxer | Canvi | Motiu |
+|-----------|-----------|-----------|
+|```cloudsim/network/datacenter/TopologicalGraph.java```|Afegeix comentari ```// WORKING ON private Map<Node> nodeMap;```| ...|
+|```cloudsim/network/datacenter/TopologicalNode.java```|<ul><li>Afegeix mètode public *setNodeLabel(String name)*<br></li><li>Afegeix setter `setNodeLabel(String name)`</li></ul>| ... |
+|```cloudsim/power/models/PowerModelSpecPower.java```|<ul><li>Afegeix condició: <code>if (utilization > 1 && utilization < 1.0001){<br>utilization = 1;<br>}</code>al mètode <code>getPower()</code></li></ul>|...|
+|```cloudsim/power/PowerDatacenter.java```|Varis canvis (buscar forma d'escriure'ls)|...|
+|```cloudsim/power/PowerHost.java```|<ul><li>Afegeix mètode *toString()*<br></li><li>Afegeix mètode *toJSON()*`</li></ul>|...|
+|```cloudsim/power/PowerHostUtilizationHistory.java```|Canvia el mètode *getUtilizationHistory()* de *protected* a *public*|...|
+
 ---
 
 ## 🧰 Requisits previs
