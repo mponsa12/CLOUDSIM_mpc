@@ -116,7 +116,7 @@ cloud_sergi/
 |```cloudsim/power/PowerVmAllocationPolicyMigrationMedianAbsoluteDeviation.java```|Canvia el mètode *isHostOverUtilized()* de *protected* a *public*|...|
 |```cloudsim/power/PowerVmAllocationPolicyMigrationStaticThreshold.java```|Canvia els mètodes *isHostOverUtilized()* i *getUtilizationThreshold()* de *protected* a *public*|...|
 |```cloudsim/power/PowerVmSelectionPolicy.java```|<ul><li>Afegeix getter i setter de AllocationPolicy</li><li>Afegeix getter i setter de PowerDatacenter</li></ul>|...|
-|```cloudsim/power/PowerMaximumCorrelation.java```|<ul><li>Canvia el mètode *getCorrelationCoefficients()* de *protected* a *public*</li></ul>|...|
+|```cloudsim/power/PowerVmSelectionPolicyMaximumCorrelation.java```|<ul><li>Canvia el mètode *getCorrelationCoefficients()* de *protected* a *public*</li><li>Afegeix un *println* al principi i al final del mètode *getVmToMigrate()* per mostrar informació pel terminal (hostID)</li></ul>|...|
 
 ---
 
