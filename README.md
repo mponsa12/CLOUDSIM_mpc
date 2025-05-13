@@ -117,6 +117,18 @@ cloud_sergi/
 |```cloudsim/power/PowerVmAllocationPolicyMigrationStaticThreshold.java```|Canvia els mètodes *isHostOverUtilized()* i *getUtilizationThreshold()* de *protected* a *public*|...|
 |```cloudsim/power/PowerVmSelectionPolicy.java```|<ul><li>Afegeix getter i setter de AllocationPolicy</li><li>Afegeix getter i setter de PowerDatacenter</li></ul>|...|
 |```cloudsim/power/PowerVmSelectionPolicyMaximumCorrelation.java```|<ul><li>Canvia el mètode *getCorrelationCoefficients()* de *protected* a *public*</li><li>Afegeix un *println* al principi i al final del mètode *getVmToMigrate()* per mostrar informació pel terminal (hostID)</li></ul>|...|
+|```cloudsim/util/WorkloadFileReader.java```|Afegeix un ```@see Task```|...|
+|```cloudsim/util/WorkloadModel.java```|Canvia un ```@see Workload``` per un ```@see Task```|...|
+|```cloudsim/DatacenterBroker.java```|VARIS CANVIS, MIRAR COM POSAR-HO|...|
+|```cloudsim/Host.java```|VARIS CANVIS, MIRAR COM POSAR-HO|...|
+|```cloudsim/HostDynamicWorkload.java```|<ul><li>Afegeix el mètode *extraInfo()* i l'usa dins de *updateVmsProcessing()*</li><li>Comenta les línies ```if (vm.getCurrentRequestedTotalMips() == 0){vmsToRemove.add(vm);}``` del mètode *getCompletedVms()*</li></ul>|...|
+
+
+
+
+
+
+
 
 ---
 
