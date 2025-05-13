@@ -125,6 +125,7 @@ cloud_sergi/
 |```cloudsim/UtilizationModelPlanetLabInMemory.java```|<ul><li>Canvia la variable *schedulingInverval* de *private* a *protected*</li><li>Canvia la variable *data* de *private* a *protected*</li></ul>|...|
 |```cloudsim/Vm.java```|<ul><li>Fa un implements de *NetworkElement* a la classe</li><li>VARIS CANVIS... MIRAR COM POSAR-HO</li></ul>|...|
 |```cloudsim/VmAllocationPolicy.java```|<ul><li>Afegeix la variable publica *vmSelectionPolicy* de tipus *PowerVmSelectionPolicy*</li><li>Afegeix la variable privada *powerDatacenter* de tipus *PowerDatacenter*</li><li>Afegeix getter i setter de *powerDatacenter*</li><li>Canvia el mètode *setHostList()* de *protected* a *public*</li></ul>|...|
+|```cloudsim/VmSchedulerTimeShared.java```|Afegeix dos logs dins del mètode *allocatePesForVm()*|...|
 
 
 
