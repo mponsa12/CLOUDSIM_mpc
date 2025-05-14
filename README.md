@@ -109,7 +109,7 @@ cloud_sergi/
 |```cloudsim/power/PowerHost.java```|<ul><li>Afegeix mètode *toString()*<br></li><li>Afegeix mètode *toJSON()*`</li></ul>|...|
 |```cloudsim/power/PowerHostUtilizationHistory.java```|Canvia el mètode *getUtilizationHistory()* de *protected* a *public*|...|
 |```cloudsim/power/PowerVm.java```|Canvia el mètode *getUtilizationHistory()* de *protected* a *public*|...|
-|```cloudsim/power/PowerVmAllocationPolicyAbstract.java```|<ul><li>Afegeix getter i setter de *VmSelectionPolicy*</li><li>Afegeix condició: <code>if(vm.hasPreAssignedHost) {vm.hasPreAssignedHost = false;</br>return vm.preAssignedHost;</br>}</code>al mètode <code>findHostForVm()</code></li><li>VARIES MODIFICACIONS: PENSAR COM POSAR-HO</li></ul>|...|
+|```cloudsim/power/PowerVmAllocationPolicyAbstract.java```|<ul><li>Afegeix getter i setter de *VmSelectionPolicy*</li><li>Afegeix condició: <code>if(vm.hasPreAssignedHost) {vm.hasPreAssignedHost = false;</br>return vm.preAssignedHost;</br>}</code>al mètode <code>findHostForVm()</code></li></ul>|...|
 |```cloudsim/power/PowerVmAllocationPolicyMigrationAbstract.java```|<ul><li>VARIES MODIFICACIONS: PENSAR COM POSAR-HO</li></ul>|...|
 |```cloudsim/power/PowerVmAllocationPolicyMigrationInterQuartileRange.java```|<ul><li>Canvia el mètode *isHostOverUtilized()* de *protected* a *public*</li><li>Afegeix un *println* per mostrar informació pel terminal (hostID, isMigrationRequired)</li></ul>|...|
 |```cloudsim/power/PowerVmAllocationPolicyMigrationLocalRegression.java```|Canvia el mètode *isHostOverUtilized()* de *protected* a *public*|...|
