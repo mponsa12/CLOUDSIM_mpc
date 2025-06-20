@@ -129,6 +129,30 @@ cloud_sergi/
 
 ---
 
+## 🧪 Evolució de CloudSim 4.0 a CloudSim 7.0
+
+### 🔧 De CloudSim 4.0 a 5.0
+  * Millora el suport per a contenidors.
+  * Compatibilitat amb xarxes SDN/SFC: Modelatge d'aplicacions web en entorns multinúvol.
+  * Noves extensions de VM: Inclouen monitorització de rendiment.
+  * Major modularitat i compatibilitat amb models de simulació com a Software-Defined Networks (SDN) i Service Function Chaining (SFC).
+
+### 🔧 De CloudSim 5.0 a 6.0
+- Inclusió de contribucions externes:
+  - Contenidors
+  - Balanceig de càrrega geogràfic
+  - Suport per a xarxes definides per programari (SDN)
+ 
+### 🔧 De CloudSim 6.0 a 7.0
+  * Arquitectura base consolidada per permetre la integració modular d'extensions.
+  * Refactorització de NetworkCloudSim com a extensió independent.
+  * Eliminació de més de 13.000 línies de codi redundant o obsolet.
+- Refactoritzacions i canvis estructurals:
+  - Contenidors
+  - Balanceig de càrrega geogràfic
+  - Suport per a xarxes definides per programari (SDN)
+
+---
 ## 🧰 Requisits previs
 
 Assegura’t de tenir instal·lat:
