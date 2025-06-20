@@ -151,9 +151,9 @@ cloud_sergi/
     * Eliminació de més de 13.000 línies de codi redundant o obsolet.
 
 - Refactoritzacions i canvis estructurals:
-    * Interfícies estàndard per a “Guest” i “Host” entities: Millora la reutilització i extensibilitat.
-    * ContainerCloudSim va ser simplificat: Es van eliminar redundàncies al codi.
-    * NetworkCloudSim reescrit: Afegeix capacitats de xarxa més realistes i bàsiques.
+    * Interfícies estàndard per les entitats “Guest” i “Host”: Millora la reutilització i extensibilitat.
+    * Simplificació de ContainerCloudSim: S'eliminen redundàncies al codi.
+    * NetworkCloudSim reescrit: S'afegeix capacitats de xarxa més realistes i bàsiques.
     * Nested Virtualization (Virtualització imbricada):
         - Contenidors dins de VMs
         - VMs dins d'altres VMs
@@ -163,12 +163,12 @@ cloud_sergi/
     * Ús d'estructures de dades més eficients → millora el rendiment i redueix l'ús de memòria heap.
     * Eliminació de Lombok: Simplifica el procés de compilació.
     * Migració a JUnit 5.
-    * Sistema d'etiquetes (CloudSimTag) ara fa servir Enums en lloc d'enters estàtics.
+    * Implementació del sistema d'etiquetes CloudSimTag. Ara es fa servir "Enums" enlloc d'enters estàtics.
 
 - Noves funcionalitats:
     * Overhead de virtualització imbricada: Paràmetre addicional per simular sobrecostos computacionals.
     * Petit test suite integrat per detectar regressions.
-    * Correcció d'errors (NullPointers, errors d'arredoniment, etc.), amb l'ajut de la comunitat.
+    * Correcció d'errors (NullPointers, errors d'arredoniment, etc.).
   
 ---
 ## 🧰 Requisits previs
