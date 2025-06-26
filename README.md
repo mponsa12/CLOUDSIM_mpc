@@ -169,8 +169,34 @@ cloud_sergi/
     * Overhead de virtualització imbricada: Paràmetre addicional per simular sobrecostos computacionals.
     * Petit test suite integrat per detectar regressions.
     * Correcció d'errors (NullPointers, errors d'arredoniment, etc.).
-  
+      
 ---
+
+## 🧪 Comparació entre CloudSim 7.0 i CloudSim-sergi
+
+### ✅ Funcionalitats ja disponibles a CloudSim 7.0
+
+### ❌ Funcionalitats de CloudSim-sergi que falten a CloudSim 7.0
+
+### 🧩 Taula comparativa de funcionalitats
+
+| **Funcionalitat**                                             | **CloudSim 4.0** | **CloudSim-sergi**                                      | **CloudSim 7.0**                               | **Cal incorporar a 7.0 millorada?**                  |
+| ------------------------------------------------------------- | ---------------- | ------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------------- |
+| **Topologies de xarxa** (grafs, enllaços, latències)          | ❌ Limitada      | ✅ Afegida manualment (TopologicalGraph)               | ✅ Avançada i modular                          | ✅ **Fusionar millores locals si cal**              |
+| **Migració amb delays i snapshots**                           | ❌ No            | ✅ Sí (migrationDelay, snapshots, slotNum)             | ❌ No                                          | ✅ **Sí, s'ha d'afegir**                            |
+| **VM pre-assignades (hasPreAssignedHost)**                    | ❌ No            | ✅ Sí                                                  | ❌ No                                          | ✅ **Sí, útil per optimització**                    |
+| **JSON output i logs** (StaticLog, JSONOutput)                | ❌ No            | ✅ Sí                                                  | ❌ No                                          | ✅ **Sí, afegir opcional per anàlisi**              |
+| **Control detallat sobre polítiques de migració**             | ❌ Bàsic         | ✅ Afegit (public methods, mapes, logs)                | ✅ Modular però sense logs ni exposició de tot | 🔶 **Revisar duplicats i afegir mètodes útils**     |
+| **Model d’energia (PowerModel, PowerVm)**                     | ✅ Bàsic         | ✅ Millorat (condició d'1.0001, toJSON)                | ✅ Redissenyat i optimitzat                    | 🔶 **Revisar compatibilitat i adaptar**             |
+| **Contenidors / Nested virtualization**                       | ❌ No            | ❌ No                                                  | ✅ Sí                                          | ❌ Ja inclòs                                        |
+| **Extra info a Host / Vm (networkId, energyFull, extraInfo)** | ❌ No            | ✅ Sí                                                  | ❌ Parcialment                                 | ✅ **Afegir getters/setters**                       |
+| **Gestió de polítiques com a objectes reutilitzables**        | ❌ No            | ✅ Sí (setters de vmSelectionPolicy, datacenterBroker) | ✅ Interfaces modulars                         | 🔶 Revisar integració, però majoritàriament inclòs  |
+| **Output detallat de migració i host info**                   | ❌ No            | ✅ Sí (logs, println)                                  | ❌ No                                          | ✅ **Afegir com a feature opcional**                |
+| **Exposició de mètodes protegits**                            | ❌ No            | ✅ Sí                                                  | ❌ Parcial                                     | ✅ **Sí, per facilitació de testing i modularitat** |
+| **Millora d’assignació VM (mapes, shutdown fix)**             | ❌ No            | ✅ Sí (vmHostMap, vmIdMap)                             | ❌ No                                          | ✅ **Afegir a Broker 7.0 si no existeix**           |
+
+---
+
 ## 🧰 Requisits previs
 
 Assegura’t de tenir instal·lat:
