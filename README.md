@@ -176,7 +176,46 @@ cloud_sergi/
 
 ### ✅ Funcionalitats ja disponibles a CloudSim 7.0
 
+- **Modelatge de xarxes i topologies**  
+  CloudSim 7G integra un núcli reescrit de networking amb suport per a topologies complexes, switches i latència de xarxa, com a part dels models externs “NetworkCloudSim” integrats a la base.  
+
+- **Migració i selecció de VMs**  
+  CloudSim 7G introdueix interfaces estàndard per a polítiques de migració i selecció, facilitant la interoperabilitat entre mòduls, incloent l’ús unificat de criteris per a migració i al·locació.  
+
+- **Mòdul d’energia ("power module")**  
+  El mòdul energètic ha sigut refactoritzat i optimitzat dins la base de 7G, mantenint funcionalitats com múltiples models de potència i històrics d’utilització.
+
+- **Simulació de contenidors i nested virtualization**  
+  S’han afegit opcions per modelar VMs dins contenidors, o contenidors dins VMs, millorant la fidelitat davant entorns reals.  
+
+- **Millora de performance i modularitat**  
+  Gran reducció de codi (13.000+ línies eliminades), millor rendiment i memòria més eficient (~25% menys).  
+
 ### ❌ Funcionalitats de CloudSim-sergi que falten a CloudSim 7.0
+
+Tot i les millores pròpies de CloudSim 7.0, la versió modificada del Sergi afegeix funcionalitats molt valuoses que encara no estan integrades i que es recomana adaptar per enriquir el simulador, com són:
+
+* **Migració avançada amb delays i snapshots:**  
+Gestió detallada del retard en migracions (migrationDelay), i captura d’estats (snapshots) per a una simulació més precisa dels processos de migració.
+
+* **Control de VM preassignades:**  
+Suport per a VMs amb host preassignat (hasPreAssignedHost), permetent un control més fi sobre la ubicació i migració de VMs.
+
+* **Sortida detallada de logs i JSON:**  
+Integració de sortides més completes en forma de logs i arxius JSON per facilitar anàlisi posterior i depuració avançada.
+
+* **Mètodes públics addicionals en polítiques de migració:**  
+Exposició d’eines per accedir i modificar mapes de migració i estadístiques, millorant la transparència i l’extensibilitat.
+
+* **Informació ampliada de xarxa i energia per Host i VM:**  
+Incorporació de camps com networkId, energyIdle, energyFull i informació extra per a una simulació més realista i detallada.
+
+* **Millores en DatacenterBroker:**  
+Gestió avançada de mapes VM-host (vmHostMap, vmIdMap) i correccions per al tancament de simulacions (shutdownEntity).
+
+* **Exposició de mètodes protegits per facilitar testing i modularitat:**  
+Canvis que permeten una millor reutilització i proves unitàries, facilitant el desenvolupament i manteniment.
+
 
 ### 🧩 Taula comparativa de funcionalitats
 
